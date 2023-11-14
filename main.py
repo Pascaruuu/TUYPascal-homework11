@@ -6,6 +6,11 @@ from db import session
 Query all employee records from the employee table
 And query employee with condition, emp_num > 101
 '''
+employees = session.query(Employee).first()
+
+print(employees.emp_fname)
+
+
 # employees = session.query(Employee).all()
 # employees = session.query(Employee).filter(Employee.emp_num > 101).all()
 # for employee in employees:
